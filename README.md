@@ -32,10 +32,15 @@ math, tqdm, imageio
 graphviz (https://graphviz.org/download/)
 
 #Usage
+
 The main function is run_strategy_iteration_with_counterexample.
 It runs some version of strategy iteration on a parity game.
 It writes, depending on the settings, the strategies encountered, and makes an animation.
+
+There are some examples of GIF's in the "Example animations" folder
+
 #Inputs
+
 - n: index of the graph G_n
 - mode: Version of strategy iteration (default: symmetric or switch-all)
   - mode = 'even' - strategy iteration for player 0/player even 
@@ -49,6 +54,7 @@ It writes, depending on the settings, the strategies encountered, and makes an a
 - check_strategy: if True, check if input strategies are valid (default: True)
 
 #Outputs
+
 - G: the graph. one could find the values of nodes in the
         v.valuation0 or v.valuation1 attribute for vertices v of G 
          (depending on type of strategy iteration)
@@ -67,6 +73,7 @@ The following improvement rules are included:
 - "highestvaluation": Self-explanatory (one-player SI only)
 
 #Counterexamples
+
 The following parity games with exponential 
 running time for their respective improvement 
 rule are included:
@@ -78,6 +85,7 @@ rule are included:
 - "lowestvaluation": what could this be?
 
 #Customization
+
 One could add a new improvement rule as function 
 in strategy_iteration.py. Its name should then be added as an
 option within select_edges in strategy_iteration.py
