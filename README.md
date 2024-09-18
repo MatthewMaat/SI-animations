@@ -15,7 +15,7 @@ The code is not optimized for speed so having large graphs
 (more than 100 nodes) or having large exponential examples
 with n>=5 may result in long runtimes.
 
-This project uses a custum graph class made by 
+This project uses a custom graph class made by 
 Paul Bonsma, Pieter Bos and Tariq Bontekoe
 
 #Prerequisites
